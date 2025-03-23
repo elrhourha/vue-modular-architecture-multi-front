@@ -1,0 +1,13 @@
+{
+  "todosList": {
+    "title": "Liste des tâches",
+    "table": {
+      "header": {
+        "id": "id",
+        "title": "Titre",
+        "completed": "Terminé",
+        "userId": "Identifiant utilisateur"
+      }
+    }
+  }
+}

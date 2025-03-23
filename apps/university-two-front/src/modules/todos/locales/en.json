@@ -1,0 +1,13 @@
+{
+  "todosList": {
+    "title": "Todos list",
+    "table": {
+      "header": {
+        "id": "id",
+        "title": "Title",
+        "completed": "Completed",
+        "userId": "User ID"
+      }
+    }
+  }
+}

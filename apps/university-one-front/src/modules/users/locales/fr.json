@@ -1,0 +1,13 @@
+{
+  "usersList": {
+    "title": "Liste des utilisateurs",
+    "table": {
+      "header": {
+        "name": "Nom",
+        "email": "Email",
+        "username": "login",
+        "id": "identifiant"
+      }
+    }
+  }
+}
