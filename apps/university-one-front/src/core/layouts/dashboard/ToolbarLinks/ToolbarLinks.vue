@@ -14,15 +14,12 @@
 </template>
 <script setup lang="ts">
   import { type Ref, computed } from 'vue'
-  import { useI18n } from 'vue-i18n'
 
   type ToolbarLinkItem = {
     routeName: string
     active?: boolean
     label: string
   }
-
-  const { t } = useI18n()
 
   const toolbarLinks: Ref<ToolbarLinkItem[]> = computed(() => [])
 </script>

@@ -3,6 +3,7 @@ import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
 import vueTsEslintConfig from '@vue/eslint-config-typescript'
 import pluginCypress from 'eslint-plugin-cypress/flat'
 import pluginVue from 'eslint-plugin-vue'
+import pluginVueA11y from 'eslint-plugin-vuejs-accessibility'
 
 export default [
   {
@@ -16,6 +17,7 @@ export default [
   },
 
   ...pluginVue.configs['flat/essential'],
+  ...pluginVueA11y.configs['flat/recommended'],
   ...vueTsEslintConfig(),
   {
     files: ['**/*.vue'],

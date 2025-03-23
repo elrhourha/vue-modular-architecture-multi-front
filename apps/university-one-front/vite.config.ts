@@ -1,6 +1,5 @@
 import vue from '@vitejs/plugin-vue'
 import { URL, fileURLToPath } from 'node:url'
-import * as path from 'path'
 import { defineConfig } from 'vite'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import vuetify from 'vite-plugin-vuetify'

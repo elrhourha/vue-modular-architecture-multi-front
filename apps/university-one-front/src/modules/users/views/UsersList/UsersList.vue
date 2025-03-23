@@ -15,7 +15,19 @@
         <v-progress-linear indeterminate></v-progress-linear>
       </template>
     </v-data-table-server>
-    <BaseButton label="This Button from shared ui lib in mutli front monorepo" color="secondary" />
+    <v-row no-gutters>
+      <BaseButton label="This Button from shared ui lib in mutli front monorepo" color="primary" />
+    </v-row>
+    <v-card>
+      <v-card-title
+        >Eslint will throw an error it the image bellow is rendered without alt</v-card-title
+      >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg"
+        height="300"
+        alt="Vue.js_Logo_2"
+      />
+    </v-card>
   </div>
 </template>
 
