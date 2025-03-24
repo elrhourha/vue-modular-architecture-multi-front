@@ -1,3 +1,9 @@
+<template>
+<v-btn :color="props.color" class="text-none">
+  {{props.label}}
+</v-btn>
+</template>
+
 <script setup lang="ts">
 export type ButtonProps ={
   label: string
@@ -5,12 +11,6 @@ export type ButtonProps ={
 }
 const props = defineProps<ButtonProps>()
 </script>
-
-<template>
-<v-btn :color="props.color" class="text-none">
-  {{props.label}}
-</v-btn>
-</template>
 
 <style scoped>
 

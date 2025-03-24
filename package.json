@@ -1,10 +1,11 @@
 {
-  "name": "university-apps",
+  "name": "vue-modular-architecture-multi-front",
   "version": "1.0.0",
   "scripts": {
-    "dev": "pnpm --recursive --parallel --filter=!ui-components dev",
-    "build": "pnpm --recursive --parallel  build",
-    "preview": "vite preview",
-    "type-check": "vue-tsc --noEmit"
+    "dev": "pnpm build:ui-components && pnpm --recursive --parallel --filter=!ui-components dev",
+    "build:ui-components": "pnpm --filter ui-components build",
+    "build:apps": " pnpm --recursive --parallel --filter=!ui-components build",
+    "build": "pnpm build:ui-components && pnpm build:apps",
+    "lint": "pnpm --recursive lint"
   }
 }
