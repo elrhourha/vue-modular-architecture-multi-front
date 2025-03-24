@@ -1,5 +1,5 @@
 <template>
-  <div class="cursor-pointer" @click="() => {}">
+  <div class="cursor-pointer">
     <v-icon alt="App Logo" class="shrink mr-2" size="x-small">mdi-sync</v-icon>
     <span class="pr-5">{{ t('header.title') }}</span>
   </div>

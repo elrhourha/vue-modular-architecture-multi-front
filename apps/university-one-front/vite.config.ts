@@ -43,6 +43,9 @@ export default defineConfig(({ mode }) => {
          styles: {
           configFile: 'src/assets/settings.scss',
         },*/
+        styles: {
+          configFile: 'src/assets/settings.scss',
+        },
       }),
     ],
     resolve: {
