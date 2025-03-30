@@ -6,10 +6,8 @@ import vuetify from 'vite-plugin-vuetify'
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
-  const isProduction = mode === 'production'
-
   return {
-    base: isProduction ? '/v3/' : '/',
+    base: '/',
     build: {
       rollupOptions: {
         output: {

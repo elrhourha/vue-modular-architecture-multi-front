@@ -1,7 +1,12 @@
 <template>
   <v-menu>
     <template v-slot:activator="{ props }">
-      <v-btn icon="mdi-translate" density="comfortable" v-bind="{ ...props, ...$attrs }" />
+      <v-btn
+        icon="mdi-translate"
+        density="comfortable"
+        v-bind="{ ...props, ...$attrs }"
+        aria-label="language"
+      />
     </template>
     <v-list min-width="2rem">
       <v-list-item

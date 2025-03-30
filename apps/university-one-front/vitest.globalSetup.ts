@@ -1,10 +1,10 @@
-import { routes } from '@/router'
 import { config } from '@vue/test-utils'
 import ResizeObserver from 'resize-observer-polyfill'
 import { createRouter, createWebHistory } from 'vue-router'
 import 'vuetify/styles'
-import i18n from '@/plugins/vue-i18n'
-import vuetify from '@/plugins/vuetify'
+import i18n from './src/plugins/vue-i18n'
+import vuetify from './src/plugins/vuetify'
+import { routes } from './src/router'
 
 const router = createRouter({
   history: createWebHistory(),
