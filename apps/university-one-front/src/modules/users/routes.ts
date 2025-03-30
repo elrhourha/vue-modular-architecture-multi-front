@@ -1,10 +1,11 @@
 import { type RouteRecordRaw } from 'vue-router'
 
 export const USERS_LIST_ROUTE_NAME = 'users-home'
+export const USERS_LIST_ROUTE_PATH = '/users'
 
 const usersRoutes: RouteRecordRaw[] = [
   {
-    path: '/users',
+    path: USERS_LIST_ROUTE_PATH,
     component: () => import('@/modules/users/UserModuleRoot.vue'),
     children: [
       {

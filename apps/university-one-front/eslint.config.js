@@ -13,7 +13,13 @@ export default [
 
   {
     name: 'app/files-to-ignore',
-    ignores: ['**/dist/**', '**/dist-ssr/**', '**/coverage/**'],
+    ignores: [
+      '**/dist/**',
+      '**/dist-ssr/**',
+      '**/coverage/**',
+      '**/.lighthouserc.cjs',
+      '.lighthouse/extract-routes.ts',
+    ],
   },
 
   ...pluginVue.configs['flat/essential'],

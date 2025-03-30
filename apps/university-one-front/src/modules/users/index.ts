@@ -2,7 +2,11 @@ import type { AppLocalValue, AppLocale } from '@/core/types/locales.types'
 import en from './locales/en.json'
 import fr from './locales/fr.json'
 
-export { default as usersModuleRoutes, USERS_LIST_ROUTE_NAME } from './routes'
+export {
+  default as usersModuleRoutes,
+  USERS_LIST_ROUTE_NAME,
+  USERS_LIST_ROUTE_PATH,
+} from './routes'
 
 export const locales: Record<AppLocale, AppLocalValue> = {
   fr,
