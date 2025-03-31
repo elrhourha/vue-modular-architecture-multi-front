@@ -1,10 +1,11 @@
 import { type RouteRecordRaw } from 'vue-router'
 
 export const TODOS_LIST_ROUTE_NAME = 'todos-home'
+export const TODOS_LIST_ROUTE_PATH = '/todos'
 
 const todosRoutes: RouteRecordRaw[] = [
   {
-    path: '/todos',
+    path: TODOS_LIST_ROUTE_PATH,
     component: () => import('@/modules/todos/TodoModuleRoot.vue'),
     children: [
       {
