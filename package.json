@@ -5,6 +5,7 @@
     "dev": "pnpm build:ui-components && pnpm --recursive --parallel --filter=!ui-components dev",
     "build:ui-components": "pnpm --filter ui-components build",
     "build:apps": " pnpm --recursive --parallel --filter=!ui-components build",
+    "check:accessibility": "pnpm --recursive --parallel --filter=!ui-components check:accessibility",
     "build": "pnpm build:ui-components && pnpm build:apps",
     "lint": "pnpm --recursive lint"
   }
